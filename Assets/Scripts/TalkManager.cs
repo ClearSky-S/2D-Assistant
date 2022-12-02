@@ -24,7 +24,7 @@ public class TalkManager : MonoBehaviour
         CharacterData characterData = characterManager.character.GetComponent<CharacterData>();
         characterManager.PlayInteractAnimation();
 
-        int index = 0;
+        int index = Random.Range(0, characterData.interact.Length);
         characterAudioSource.clip = characterData.interact[index].audioClip;
         characterAudioSource.Play();
         talkText.text = characterData.interact[index].text;

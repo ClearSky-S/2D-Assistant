@@ -9,6 +9,7 @@ public class CharacterData : MonoBehaviour
     public struct TalkData
     {
         public string title;
+        [TextArea]
         public string text;
         public AudioClip audioClip;
     };
