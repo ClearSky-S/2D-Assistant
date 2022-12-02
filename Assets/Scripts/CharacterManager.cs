@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CharacterManager : MonoBehaviour
 {
+
     public GameObject character;
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,7 @@ public class CharacterManager : MonoBehaviour
         
     }
 
-    public void OnClick()
+    public void PlayInteractAnimation()
     {
         character.GetComponent<Animator>().SetTrigger("interact");
     }
